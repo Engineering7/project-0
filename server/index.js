@@ -17,4 +17,10 @@ app.use("/user", userRouter)
 // DONT MISUSE THIS THANKYOU!!
 mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
+app.get("/", async (req, res) => {
+
+    res.json({
+        "Mesage": "In good health sir!"
+    })
+});
 app.listen(3000, () => console.log('Server running on port 3000'));
