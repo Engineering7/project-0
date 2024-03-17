@@ -20,7 +20,7 @@ app.get("/", async (req, res) => {
 });
 // Connect to MongoDB
 // DONT MISUSE THIS THANKYOU!!
-mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
+mongoose.connect('mongodb+srv://sthas479:yuvi1234567@cluster0.ucihlla.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
 app.get("/", async (req, res) => {
 
