@@ -25,7 +25,7 @@ mongoose.connect('mongodb+srv://sthas479:yuvi1234567@cluster0.ucihlla.mongodb.ne
 app.get("/", async (req, res) => {
 
     res.json({
-        "Mesage": "In good health sir!"
+        "Mesage": "Hello world, Welcome"
     })
 });
 app.listen(3000, () => console.log('Server running on port 3000'));
